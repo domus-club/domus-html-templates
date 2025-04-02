@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Domus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #121c29;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #666666;
+        }
+        .verification-code {
+            background-color: #f8f9fa;
+            border: 2px dashed #3498DB;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            color: #2C3E50;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .welcome-text {
+            font-size: 24px;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .message {
+            margin-bottom: 20px;
+        }
+        .features {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .feature-item:before {
+            content: "✓";
+            color: #27AE60;
+            position: absolute;
+            left: 0;
+        }
+        .code-instructions {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://avatars.githubusercontent.com/u/204282984?s=400&u=65632ae128bbe50a727b4843690159cd733b575d&v=4" alt="Domus Logo" class="logo">
+            <h1>¡Bienvenido a Domus!</h1>
+        </div>
+
+        <div class="content">
+            <div class="welcome-text">
+                Hola %s,
+            </div>
+
+            <div class="message">
+                <p>Nos complace darte la bienvenida a Domus. Tu cuenta ha sido creada exitosamente y estamos emocionados de tenerte con nosotros.</p>
+                
+                <p>Con Domus, podrás:</p>
+                
+                <div class="features">
+                    <div class="feature-item">Gestionar tu residencia de manera eficiente</div>
+                    <div class="feature-item">Comunicarte con tus vecinos</div>
+                    <div class="feature-item">Realizar pagos y seguimiento de servicios</div>
+                    <div class="feature-item">Recibir notificaciones importantes</div>
+                </div>
+
+                <p>Para verificar tu cuenta, utiliza el siguiente código:</p>
+
+                <div class="verification-code">
+                    %s
+                </div>
+
+                <p class="code-instructions">
+                    Este código expirará en 10 minutos. Si no solicitaste este código, por favor ignora este correo.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Este es un correo automático, por favor no responder.</p>
+            <p>© 2024 Domus. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
